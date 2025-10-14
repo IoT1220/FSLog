@@ -2,8 +2,8 @@
 
 # Dataset Description
 This study evaluates two datasets: 
-- - **(1) the publicly available Aliyun dataset (link at https://tianchi.aliyun.com/competition/entrance/531947/information).
-- - ** (2) a proprietary dataset licensed from an industry partner, which cannot be publicly released. Access to the proprietary dataset requires authorization from the provider and a signed data‑use agreement.
+- **(1) the publicly available Aliyun dataset (link at https://tianchi.aliyun.com/competition/entrance/531947/information).
+- **(2) a proprietary dataset licensed from an industry partner, which cannot be publicly released. Access to the proprietary dataset requires authorization from the provider and a signed data‑use agreement.
 
 Dataset is divided into five parts, each representing the log data of an edge server 
 1. **the result of the log sequence after being vectorized by BERT**
