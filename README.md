@@ -20,15 +20,15 @@ FSLog is a synergistic framework for log-based root cause analysis (RCA), combin
 ### Data storage and load:
   **dataset is divided into five parts, each representing the log data of an client-server, as shown in the following three files:**
   
-**the result of the log sequence after being vectorized by BERT**
+**1.the result of the log sequence after being vectorized by BERT**
 ```bash
 data_{}.npy
 ```
-**semi-supervised labels, where -1 indicates no label**
+**2.semi-supervised labels, where -1 indicates no label**
 ```bash
  semi_label_{}.npy
 ```
-**the label of the original data source**
+**3.the label of the original data source**
 ```bash
  label_{}.npy
 ```
