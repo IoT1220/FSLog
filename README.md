@@ -17,17 +17,17 @@ FSLog is a synergistic framework for log-based root cause analysis (RCA), combin
   
   **The Privacy unavailable CMCC datasets:** a proprietary dataset licensed from an industry partner, which cannot be publicly released. Access to the proprietary dataset requires authorization from the provider and a signed data‑use agreement.  
   
-- **Data storage and load:** dataset is divided into five parts, each representing the log data of an client-server.
+- **Data storage and load:** dataset is divided into five parts, each representing the log data of an client-server, as shown in the following three files:
   
-**the result of the log sequence after being vectorized by BERT**
+***the result of the log sequence after being vectorized by BERT***
 ```bash
 data_{}.npy
 ```
-**semi-supervised labels, where -1 indicates no label**
+***semi-supervised labels, where -1 indicates no label***
 ```bash
  semi_label_{}.npy
 ```
-**the label of the original data source**
+***the label of the original data source***
 ```bash
  label_{}.npy
 ```
