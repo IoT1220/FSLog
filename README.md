@@ -110,7 +110,7 @@ aetherlog-eval --pred data/result.json --gold data/groundtruth.json
 
 ## 📁 Project Structure
 ```
-AetherLog/
+FSLog/
 ├── scripts/            # Main RCA pipeline scripts
 ├── src/                # Core modules (LLM interface, KG, model)
 ├── data/               # Input logs, KG and results
@@ -119,17 +119,7 @@ AetherLog/
 └── README.md           # Project description
 ```
 
-## 📄 Citation
-If you find AetherLog useful for your research, please cite the paper:
 
-```bibtex
-@article{aetherlog2025,
-  title={AetherLog: Log-based Root Cause Analysis by Integrating Large Language Models with Knowledge Graphs},
-  author={...},
-  journal={International Symposium on Software Reliability Engineering.},
-  year={2025}
-}
-```
 
 ## 🔗 Links
 - [Code](https://github.com/SANER26-Submission-81)
