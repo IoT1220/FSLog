@@ -11,7 +11,7 @@ FSLog is a synergistic framework for log-based root cause analysis (RCA), combin
 - **Modular & Extensible**: Fully script-based pipeline with CLI tools for preprocessing, KG construction, RCA, and evaluation.
 
 ## 📄 Dataset Description
-###This study evaluates two datasets:###
+### This study evaluates two datasets:###
   
   **The publicly available Aliyun dataset:** link at https://tianchi.aliyun.com/competition/entrance/531947/information.  
   
