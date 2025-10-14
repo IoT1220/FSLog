@@ -57,11 +57,6 @@ transfeomer_fed_bert.py
 ```
 
 
-
-
-
-
-
 ## 📦 Installation
 
 ```bash
