@@ -1,12 +1,21 @@
 # FSLog
 
+FSLog is a synergistic framework for log-based root cause analysis (RCA), combining the semantic reasoning power of large language models (LLMs) with the structure and domain specificity of knowledge graphs (KGs). Designed for modern large-scale distributed systems, it provides an accurate, explainable, and efficient way to identify system faults.
+
+## 🔍 Key Features
+
+- **LLM + KG Integration**: Combine context-aware log understanding with structured fault knowledge.
+- **Semantic Entity Aggregation**: Normalize redundant or similar fault indicators via embedding-based clustering.
+- **Context-Aware Retrieval**: Dynamically recall relevant fault entities from the KG based on summarized logs.
+- **Prompt-Driven RCA**: Construct powerful prompts to guide LLMs in accurate fault reasoning.
+- **Modular & Extensible**: Fully script-based pipeline with CLI tools for preprocessing, KG construction, RCA, and evaluation.
+
 ## 📄 Dataset Description
 1. **This study evaluates two datasets:**
 - **(1) the publicly available Aliyun dataset:** link at https://tianchi.aliyun.com/competition/entrance/531947/information.
 - **(2) the Privacy unavailable CMCC datasets:** a proprietary dataset licensed from an industry partner, which cannot be publicly released. Access to the proprietary dataset requires authorization from the provider and a signed data‑use agreement.
 
-- 
-- **(3) Dataset is divided into five parts, each representing the log data of an client-server**
+2. **Data storage and load:** dataset is divided into five parts, each representing the log data of an client-server.
   
 1. **the result of the log sequence after being vectorized by BERT**
 ```bash
@@ -21,7 +30,7 @@ data_{}.npy
  label_{}.npy
 ```
 
-# Icore code description
+## 📁 Icore code description
 
 1. **Data Loading Class**
 ```bash
@@ -48,17 +57,6 @@ fed_split_main.py
 transfeomer_fed_bert.py
 ```
 
-# FSLog
-
-FSLog is a synergistic framework for log-based root cause analysis (RCA), combining the semantic reasoning power of large language models (LLMs) with the structure and domain specificity of knowledge graphs (KGs). Designed for modern large-scale distributed systems, it provides an accurate, explainable, and efficient way to identify system faults.
-
-## 🔍 Key Features
-
-- **LLM + KG Integration**: Combine context-aware log understanding with structured fault knowledge.
-- **Semantic Entity Aggregation**: Normalize redundant or similar fault indicators via embedding-based clustering.
-- **Context-Aware Retrieval**: Dynamically recall relevant fault entities from the KG based on summarized logs.
-- **Prompt-Driven RCA**: Construct powerful prompts to guide LLMs in accurate fault reasoning.
-- **Modular & Extensible**: Fully script-based pipeline with CLI tools for preprocessing, KG construction, RCA, and evaluation.
 
 
 
