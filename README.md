@@ -1,11 +1,13 @@
 # FSLog
 
-# Dataset Description
-This study evaluates two datasets: 
-- **(1) the publicly available Aliyun dataset (link at https://tianchi.aliyun.com/competition/entrance/531947/information).
-- **(2) a proprietary dataset licensed from an industry partner, which cannot be publicly released. Access to the proprietary dataset requires authorization from the provider and a signed data‑use agreement.
+## 📄 Dataset Description
+1. **This study evaluates two datasets:**
+- **(1) the publicly available Aliyun dataset:** link at https://tianchi.aliyun.com/competition/entrance/531947/information.
+- **(2) the Privacy unavailable CMCC datasets:** a proprietary dataset licensed from an industry partner, which cannot be publicly released. Access to the proprietary dataset requires authorization from the provider and a signed data‑use agreement.
 
-Dataset is divided into five parts, each representing the log data of an edge server 
+- 
+- **(3) Dataset is divided into five parts, each representing the log data of an client-server**
+  
 1. **the result of the log sequence after being vectorized by BERT**
 ```bash
 data_{}.npy
@@ -59,7 +61,7 @@ FSLog is a synergistic framework for log-based root cause analysis (RCA), combin
 - **Modular & Extensible**: Fully script-based pipeline with CLI tools for preprocessing, KG construction, RCA, and evaluation.
 
 
-## 📄 Introduction to the core code
+
 
 
 
