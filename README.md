@@ -122,4 +122,4 @@ FSLog/
 
 
 ## 🔗 Links
-- [Code](https://github.com/SANER26-Submission-81)
+- [Code](https://github.com/SANER26-Submission-81/FSLog)
