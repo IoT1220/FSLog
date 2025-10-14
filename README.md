@@ -11,12 +11,12 @@ FSLog is a synergistic framework for log-based root cause analysis (RCA), combin
 - **Modular & Extensible**: Fully script-based pipeline with CLI tools for preprocessing, KG construction, RCA, and evaluation.
 
 ## 📄 Dataset Description
-**1. This study evaluates two datasets:**
+- **This study evaluates two datasets:**
   **The publicly available Aliyun dataset:** link at https://tianchi.aliyun.com/competition/entrance/531947/information.  
   
   **The Privacy unavailable CMCC datasets:** a proprietary dataset licensed from an industry partner, which cannot be publicly released. Access to the proprietary dataset requires authorization from the provider and a signed data‑use agreement.  
   
-**2. Data storage and load:** dataset is divided into five parts, each representing the log data of an client-server.
+- **Data storage and load:** dataset is divided into five parts, each representing the log data of an client-server.
   
 **the result of the log sequence after being vectorized by BERT**
 ```bash
