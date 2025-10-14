@@ -12,6 +12,7 @@ FSLog is a synergistic framework for log-based root cause analysis (RCA), combin
 
 ## 📄 Dataset Description
 - **This study evaluates two datasets:**
+  
   **The publicly available Aliyun dataset:** link at https://tianchi.aliyun.com/competition/entrance/531947/information.  
   
   **The Privacy unavailable CMCC datasets:** a proprietary dataset licensed from an industry partner, which cannot be publicly released. Access to the proprietary dataset requires authorization from the provider and a signed data‑use agreement.  
