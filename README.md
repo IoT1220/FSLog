@@ -12,14 +12,14 @@ FSLog is a novel federated split learning (FSL) framework. It enables collaborat
 
 ## 📄 Dataset Description
 ### This study evaluates two datasets:
-  
+
   **The publicly available Aliyun dataset:** link at https://tianchi.aliyun.com/competition/entrance/531947/information.  
-  
+
   **The Privacy unavailable CMCC datasets:** a proprietary dataset licensed from an industry partner, which cannot be publicly released. Access to the proprietary dataset requires authorization from the provider and a signed data‑use agreement.  
-  
+
 ### Data storage and load:
   **dataset is divided into five parts, each representing the log data of an client-server, as shown in the following three files:**
-  
+
 **1.The result of the log sequence after being vectorized by BERT**
 ```bash
 data_{}.npy
@@ -60,64 +60,58 @@ fed_split_main.py
 transfeomer_fed_bert.py
 ```
 
-
 ## 📦 Installation
 
-```bash
-pip install .
+```
+conda create --name <env> --file requirements.txt
 ```
 
 ## 🚀 Quick Start
 
-
-
-1. **Preprocess Logs**
 ```bash
-aetherlog-preprocess --input data/raw_logs.json --output data/summary.json
+
+
+# docker simulation
+docker network create --subnet 192.168.0.0/16 --gateway 192.168.0.1 fednet
+docker pull pytorch/pytorch:1.5-cuda10.1-cudnn7-runtime
+
+docker run -it --gpus all -v xxx:/workspace --net fednet -p 12000 --name fed0 pytorch /bin/bash
+docker run -it --gpus all -v xxx:/workspace --net fednet -p 12000 --name fed0 pytorch /bin/bash
+docker run -it --gpus all -v xxx:/workspace --net fednet -p 12000 --name fed1 pytorch /bin/bash
+docker run -it --gpus all -v xxx:/workspace --net fednet -p 12000 --name fed2 pytorch /bin/bash
+docker run -it --gpus all -v xxx:/workspace --net fednet -p 12000 --name fed3 pytorch /bin/bash
+docker run -it --gpus all -v xxx:/workspace --net fednet -p 12000 --name fed4 pytorch /bin/bash
+docker run -it --gpus all -v xxx:/workspace --net fednet -p 12000 --name fed5 pytorch /bin/bash
+
+
+# Serial simulation experiment
+cd code
+python fed_split_main.py
+
+
+# Docker simulation experiment
+cd code
+export MASTER_ADDR=192.168.0.2
+export MASTER_PORT=8888
+export WORLD_SIZE=3
+export RANK=xx
+python docker_fed_bert_main_semi-supervised.py
 ```
 
-2. **Data Loading Class**
-    data_loader.py
-```bash
-aetherlog-buildkg
-```
 
-
-2. **Build split bert**
-```bash
-aetherlog-buildkg
-```
-
-3. **Recall Entities**
-```bash
-aetherlog-recall --log data/summary.json --entity data/kg.json --output data/recalled.json
-```
-
-4. **Construct RCA Prompt**
-```bash
-aetherlog-prompt --summary data/summary.json --entity data/recalled.json --output data/prompt.json
-```
-
-5. **Run RCA Analysis**
-```bash
-aetherlog-rca --log data/summary.json --kg data/kg.json --out data/result.json
-```
-
-6. **Evaluate Performance**
-```bash
-aetherlog-eval --pred data/result.json --gold data/groundtruth.json
-```
 
 ## 📁 Project Structure
 ```
 FSLog/
-├── scripts/            # Main RCA pipeline scripts
-├── src/                # Core modules (LLM interface, KG, model)
-├── data/               # Input logs, KG and results
-├── configs/            # YAML configuration files
-├── setup.py            # Install and entry points
+├── code/            # Icore code 
+├── data/               # Input logs
 └── README.md           # Project description
 ```
+
+
+
+## 🔗 Links
+- [Code](https://github.com/SANER26-Submission-81/FSLog)
 
 
 
