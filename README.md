@@ -1,6 +1,6 @@
 # FSLog
 
-FSLog is a synergistic framework for log-based root cause analysis (RCA), combining the semantic reasoning power of large language models (LLMs) with the structure and domain specificity of knowledge graphs (KGs). Designed for modern large-scale distributed systems, it provides an accurate, explainable, and efficient way to identify system faults.
+FSLog is a novel federated split learning (FSL) framework. It enables collaborative training while ensuring data privacy and reducing the computational load on the client. It not only significantly lowers local computational load and privacy leakage but also preserves high diagnostic accuracy.
 
 ## 🔍 Key Features
 
