@@ -6,7 +6,7 @@ FSLog is a novel federated split learning (FSL) framework. It enables collaborat
 
 - **FL + SL Integration**: Collaborative training while ensuring data privacy and reducing the computational load on the client.
 - **multilayer privacy protection mechanism**: Combining feature filtering and irreversible protection techniques to effectively reduce reconstruction success and safeguard data privacy.
-- **a model-splitting (SL-BERT）**: with the server sharing the backbone of the resource-intensive transformer and clients maintaining lightweight embeddings and personalized heads.
+- **a model-splitting (SL-BERT）**: with the server sharing the backbone of the resource-intensive transformer and clients maintaining lightweight embeddings and personalized heads to reduce local computing power load.
 - **Prompt-Driven RCA**: Construct powerful prompts to guide LLMs in accurate fault reasoning.
 - **Modular & Extensible**: Fully script-based pipeline with CLI tools for preprocessing, KG construction, RCA, and evaluation.
 
