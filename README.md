@@ -20,15 +20,15 @@ FSLog is a novel federated split learning (FSL) framework. It enables collaborat
 ### Data storage and load:
   **dataset is divided into five parts, each representing the log data of an client-server, as shown in the following three files:**
 
-**1.The result of the log sequence after being vectorized by BERT**
+- **1.The result of the log sequence after being vectorized by BERT**
 ```bash
 data_{}.npy
 ```
-**2.Semi-supervised labels, where -1 indicates no label**
+- **2.Semi-supervised labels, where -1 indicates no label**
 ```bash
  semi_label_{}.npy
 ```
-**3.The label of the original data source**
+- **3.The label of the original data source**
 ```bash
  label_{}.npy
 ```
