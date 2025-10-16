@@ -35,7 +35,7 @@ data_{}.npy
 
 ## 📁 Icore code 
 
-1. **Data Loading Class**
+1. **Data loading class**
 ```bash
 data_loader.py
 ```
@@ -55,7 +55,7 @@ docker_fed_bert_main_semi-supervised.py
 fed_split_main.py
 ```
 
-5. **FSLog Model Class**
+5. **FSLog model class**
 ```bash
 transfeomer_fed_bert.py
 ```
