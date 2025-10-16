@@ -103,8 +103,9 @@ python docker_fed_bert_main_semi-supervised.py
 ## 📁 Project Structure
 ```
 FSLog/
-├── code/            # Icore code 
+├── code/               # Icore code (SL-Bert, FL-EMA, docker)
 ├── data/               # Input logs
+├── data/               # 
 └── README.md           # Project description
 ```
 
