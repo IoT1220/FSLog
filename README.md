@@ -105,7 +105,7 @@ python docker_fed_bert_main_semi-supervised.py
 FSLog/
 ├── code/               # Icore code (SL-Bert, FL-EMA, docker)
 ├── data/               # Input logs
-├── data/               # 
+├── requirements/       # Create an environment
 └── README.md           # Project description
 ```
 
