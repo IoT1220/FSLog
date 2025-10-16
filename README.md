@@ -76,7 +76,6 @@ docker network create --subnet 192.168.0.0/16 --gateway 192.168.0.1 fednet
 docker pull pytorch/pytorch:1.5-cuda10.1-cudnn7-runtime
 
 docker run -it --gpus all -v xxx:/workspace --net fednet -p 12000 --name fed0 pytorch /bin/bash
-docker run -it --gpus all -v xxx:/workspace --net fednet -p 12000 --name fed0 pytorch /bin/bash
 docker run -it --gpus all -v xxx:/workspace --net fednet -p 12000 --name fed1 pytorch /bin/bash
 docker run -it --gpus all -v xxx:/workspace --net fednet -p 12000 --name fed2 pytorch /bin/bash
 docker run -it --gpus all -v xxx:/workspace --net fednet -p 12000 --name fed3 pytorch /bin/bash
