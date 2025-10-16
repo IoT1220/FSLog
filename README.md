@@ -4,7 +4,7 @@ FSLog is a novel federated split learning (FSL) framework. It enables collaborat
 
 ## 🔍 Key Features
 
-- **LLM + KG Integration**: Combine context-aware log understanding with structured fault knowledge.
+- **FL + SL Integration**: collaborative training while ensuring data privacy and reducing the computational load on the client.
 - **Semantic Entity Aggregation**: Normalize redundant or similar fault indicators via embedding-based clustering.
 - **Context-Aware Retrieval**: Dynamically recall relevant fault entities from the KG based on summarized logs.
 - **Prompt-Driven RCA**: Construct powerful prompts to guide LLMs in accurate fault reasoning.
