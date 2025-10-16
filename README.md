@@ -13,9 +13,9 @@ FSLog is a novel federated split learning (FSL) framework. It enables collaborat
 ## 📄 Dataset Description
 ### This study evaluates two datasets:
 
-  **The publicly available Aliyun dataset:** link at https://tianchi.aliyun.com/competition/entrance/531947/information.  
+  - **The publicly available Aliyun dataset:** link at https://tianchi.aliyun.com/competition/entrance/531947/information.  
 
-  **The Privacy unavailable CMCC datasets:** a proprietary dataset licensed from an industry partner, which cannot be publicly released. Access to the proprietary dataset requires authorization from the provider and a signed data‑use agreement.  
+  - **The Privacy unavailable CMCC datasets:** a proprietary dataset licensed from an industry partner, which cannot be publicly released. Access to the proprietary dataset requires authorization from the provider and a signed data‑use agreement.  
 
 ### Data storage and load:
   **dataset is divided into five parts, each representing the log data of an client-server, as shown in the following three files:**
